@@ -86,7 +86,7 @@ class ScenarioTreeManagerSolverWorkerPyro(_ScenarioTreeManagerSolverWorker,
                                          ephemeral_solver_options,
                                          disable_warmstart,
                                          False, # check_status
-                                         False) # async
+                                         False) # async_
         setattr(self._options,
                 self.get_full_option_name("verbose"),
                 self_verbose)

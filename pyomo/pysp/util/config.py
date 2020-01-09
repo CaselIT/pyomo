@@ -1169,7 +1169,7 @@ safe_declare_unique_option(
 
 safe_declare_unique_option(
     common_block,
-    "async",
+    "async_",
     PySPConfigValue(
         False,
         domain=bool,

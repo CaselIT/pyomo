@@ -2203,7 +2203,7 @@ class TestPHParallel(unittest.TestCase):
             filter=filter_pyro,
             tolerance=_diff_tolerance)
 
-    # async PH with one pyro solver server should yield the same behavior as serial PH.
+    # async_ PH with one pyro solver server should yield the same behavior as serial PH.
     def test_farmer_quadratic_async_ipopt_with_pyro(self):
         if not solver['ipopt','nl']:
             self.skipTest("The 'ipopt' executable is not available")
@@ -2222,7 +2222,7 @@ class TestPHParallel(unittest.TestCase):
             filter=filter_pyro,
             tolerance=_diff_tolerance_relaxed)
 
-    # async PH with one pyro solver server should yield the same behavior as serial PH.
+    # async_ PH with one pyro solver server should yield the same behavior as serial PH.
     def test_farmer_quadratic_async_gurobi_with_pyro(self):
         if not solver['gurobi','lp']:
             self.skipTest("The 'gurobi' executable is not available")
@@ -2240,7 +2240,7 @@ class TestPHParallel(unittest.TestCase):
             baseline_dir+"farmer_quadratic_async_gurobi_with_pyro.baseline",
             filter=filter_pyro)
 
-    # async PH with one pyro solver server should yield the same behavior as serial PH.
+    # async_ PH with one pyro solver server should yield the same behavior as serial PH.
     def test_farmer_linearized_async_gurobi_with_pyro(self):
         if not solver['gurobi','lp']:
             self.skipTest("The 'gurobi' executable is not available")
@@ -2258,7 +2258,7 @@ class TestPHParallel(unittest.TestCase):
             baseline_dir+"farmer_linearized_async_gurobi_with_pyro.baseline",
             filter=filter_pyro)
 
-    # async PH with one pyro solver server should yield the same behavior as serial PH.
+    # async_ PH with one pyro solver server should yield the same behavior as serial PH.
     def test_farmer_linearized_async_ipopt_with_pyro(self):
         if not solver['ipopt','nl']:
             self.skipTest("The 'ipopt' executable is not available")
